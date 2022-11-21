@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chamado</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>
+	<script type="text/javascript" src="../src/script.js" defer></script>
+	<script type="text/javascript" src="../src/createUser.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+                <li><a href="../index.html">Home</a></li>
+				<li><a href="listTickets.html">Chamados</a></li>
+				<li><a href="createTicket.html">Criar Chamado</a></li>
+				<li id="selecionado"><a href="createUser.html">Criar Usuários</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="box">
+		<h2>Criação de usuários</h1>
+		<form id="formUser" method="post">
+			<label for="name">Nome:</label>
+			<input type="text" name="name" id="name" required>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+			<label for="local">Local:</label>
+			<input type="text" name="local" id="local" required>
+			<br>
+			<input type="submit" value="Criar">
+		</form>
+	</div>
+
+</body>
+</html>
